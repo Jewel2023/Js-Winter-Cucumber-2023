@@ -1,6 +1,6 @@
-@regression @tc5
-Feature: Feedback
-Scenario: Verify Feedback feature
+@regression @tc24
+Feature: Verify error is displayed when user submits the empty feedback form
+Scenario: Verify error is displayed when user submits the empty feedback form
         When Launch Hotels
         And Click on SignIn
         And Click “Feedback”

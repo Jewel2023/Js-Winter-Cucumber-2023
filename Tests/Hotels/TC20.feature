@@ -1,6 +1,6 @@
-@regression @tc2
-Feature: Term and Condition , Privacy Statement
-Scenario: Term and Condition , Privacy Statement
+@regression @tc20
+Feature: TermsAndConditions link and PrivacyStatements link open correct page on new tab
+Scenario: Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab
         When Launch Hotels
         And Click on SignIn link
         And Click on SignUp link

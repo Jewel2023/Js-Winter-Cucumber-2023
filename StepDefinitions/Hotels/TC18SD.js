@@ -1,38 +1,39 @@
 const { Given, When, Then,  } = require("@wdio/cucumber-framework");
 const { expect } = require("chai");
 const Homepage = require('../../Pages/Hotels/Homepage');
-const SignupPage = require('../../Pages/Hotels/SignupPage')
 
 const homepage = new Homepage();
-const signuppage  = new SignupPage();
 
-When(/^Launch Hotels$/, async function () {
-    await browser.url('https://www.hotels.com/');
+Then(/^Select “Adults as 6$/, async function () {
+    await homepage.adultPlusButton(4);
+})
+
+Then(/^Select “Children” as 3$/, async function () {
+    await homepage.plusButton(3);
+    
+})
+
+Then(/^Select first child age: 4$/, async function () {
+    await homepage.selectAgeOne();
+   
 });
 
-Then(/^Click on SignIn link$/, async function () {
-    await homepage.clickSignIn();
-})
+Then(/^Select second child age: Under 1$/, async function () {
+    await homepage.selectAgeTwo();
 
-Then(/^Click on SignUp link$/, async function () {
-    await homepage.clickSignUpLink();
-})
-
-Then(/^Enter invalid email address/, async function () {
-    await signuppage.enterEmailAddress();
-})
-
-Then(/^Click Continue button$/, async function () {
-    try{
-    await signuppage.clickContinueButton();
-    }
-    catch{}
-})
-
-Then(/^Verify error is displayed Enter a valid email address$/, async function () {
-     await signuppage.isErrorDisplayed();
-}); 
-
-Then(/^Verify “Continue” button is enabled$/, async function () {
-     await signuppage.isContinueButtonEnable();
 });
+
+Then(/^Select third child age: 7$/, async function () {
+    await homepage.selectAgeThree();
+
+})
+
+Then(/^Click Done$/, async function () {
+    await homepage.clickDone();
+   
+});
+
+Then(/^Verify total number of Travelers is sum of adults and children as same as selected on step 3 and 4$/, async function () {
+    
+    
+})

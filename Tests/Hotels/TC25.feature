@@ -1,6 +1,6 @@
-@regression @tc5
-Feature: Feedback
-Scenario: Verify Feedback feature
+@regression @tc25
+Feature: Verify user can submit feedback after completing the feedback form
+Scenario: Verify user can submit feedback after completing the feedback form
         When Launch Hotels
         And Click on SignIn
         And Click “Feedback”

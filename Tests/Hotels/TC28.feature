@@ -1,6 +1,6 @@
-@regression @tc3
-Feature: Travelers
-Scenario: Verify Travelers Feature
+@regression @tc28
+Feature: Child-age dropdowns are same as number of Children selected
+Scenario: Verify Child-age dropdowns are same as number of Children selected
         When Launch Hotels
         And Click on Travelers
         And Select “Children” as 2
