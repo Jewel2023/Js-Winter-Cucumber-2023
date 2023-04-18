@@ -13,7 +13,7 @@ const privacystatementpage = new PrivacyStatementPage();
 
 
 
-Then(/^Click Terms and Conditions link$/, async function () {
+When(/^Click Terms and Conditions link$/, async function () {
     await signuppage.clickTermAndConditionLink();
     const handles = await browser.getWindowHandles();
     await browser.switchToWindow(handles[1]);
@@ -31,7 +31,7 @@ Then(/^Verify Last revised date format$/, async function () {
    
 });
 
-Then(/^Click Privacy Statement link$/, async function () {
+When(/^Click Privacy Statement link$/, async function () {
     await signuppage.clickPrivacyStatementLink();
     const handles = await browser.getWindowHandles();
     await browser.switchToWindow(handles[1]);

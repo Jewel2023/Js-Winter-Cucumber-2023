@@ -6,5 +6,5 @@ Scenario: Verify error message for invalid data in SignUp form
         And Click on SignUp link
         And Enter invalid email address
         And Click Continue button
-            Then Verify error is displayed Enter a valid email address
-            Then Verify “Continue” button is enabled
+        And Verify error is displayed Enter a valid email address
+        And Verify “Continue” button is enabled

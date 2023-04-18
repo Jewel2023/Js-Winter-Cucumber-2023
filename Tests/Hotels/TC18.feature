@@ -9,4 +9,4 @@ Scenario: Verify user can update number of guests on Home page
         And Select second child age: Under 1
         And Select third child age: 7
         And Click Done
-        And Verify total number of Travelers is sum of adults and children as same as selected on step 3 and 4
+        Then Verify total number of Travelers is sum of adults and children as same as selected on step 3 and 4

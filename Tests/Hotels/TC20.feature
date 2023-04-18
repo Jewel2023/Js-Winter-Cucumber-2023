@@ -4,10 +4,10 @@ Scenario: Verify TermsAndConditions link and PrivacyStatements link open correct
         When Launch Hotels
         And Click on SignIn link
         And Click on SignUp link
-        And Click Terms and Conditions link
-        And Verify Terms and Conditions page opens in new tab
-        And Verify Last revised date format
-        And Click Privacy Statement link
-        And Verify Privacy Statement page opens in new tab
-        And Verify Last Updated date format
+        When Click Terms and Conditions link
+        Then Verify Terms and Conditions page opens in new tab
+        Then Verify Last revised date format
+        When Click Privacy Statement link
+        Then Verify Privacy Statement page opens in new tab
+        Then Verify Last Updated date format
 
