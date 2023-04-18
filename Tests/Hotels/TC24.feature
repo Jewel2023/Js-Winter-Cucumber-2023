@@ -10,5 +10,5 @@ Scenario: Verify error is displayed when user submits the empty feedback form
         And Select any answer for “Prior to this visit, have you ever booked on Hotels.com”
         And Select any answer for ”Did you accomplish what you wanted to do on this page”
         And Click on Submit button
-            Then Verify “THANK YOU FOR YOUR FEEDBACK.“ is displayed
+        Then Verify “THANK YOU FOR YOUR FEEDBACK.“ is displayed
             
